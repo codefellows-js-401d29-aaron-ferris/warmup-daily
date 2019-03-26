@@ -1,0 +1,52 @@
+header{
+  width: 100%;
+  background-color: purple;
+  height: 10vh;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+}
+footer{
+  width: 100%;
+  background-color: aqua;
+}
+main{
+  height: 80%;
+}
+body{
+  width: 100vw;
+  height: 80vh;
+}
+div{
+  width: 80%;
+  height: 100%;
+  background-color: orange;
+  float: left;
+}
+aside{
+  width: 10%;
+}
+#left{
+  background-color: green;
+  float: left;
+}
+#right{
+  background-color: yellow;
+  float: right;
+}
+footer{
+  clear: both;
+  width: 100vw;
+  height: 10vh;
+}
+
+@media only screen and (max-width: 400px) {
+  aside{
+    width: 100%;
+    display: block;
+  }
+  content{
+    width: 100%;
+  }
+}
