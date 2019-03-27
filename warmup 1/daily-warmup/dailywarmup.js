@@ -1,42 +1,47 @@
 'use strict'
-//constants to test
 const test = [1,2,3,4,5,6,7,8,9,10]
 
-//basic loops
-const forLoop = function(array){
-   for (let i = 0; i < array.length; i++){
-     console.log(array[i])
+const FORLOOP = function(arr){
+   for (let i = 0; i < arr.length; i++){
+     console.log(arr[i])
   }
 }
-
-const whileLoop = function(array){
+FORLOOP(test);
+const WHILELOOP = function(arr){
   i = 0;
-  while(i<array.length){
-    console.log(array[i])
+  while(i<arr.length){
+    console.log(arr[i])
     i++;
   }
 }
+WHILELOOP(test);
 
-const Map = function(array){
-  let output = []
-  for (let i = 0; i< array.length; i++){
-    output[i] = array[i];
+
+const MAP = function(arr){
+  let result = [];
+  for (let i = 0; i< arr.length; i++){
+    result[i] = arr[i];
   }
-  console.log(output);
+  console.log(result);
 }
+MAP(test);
 
-const Filter = function(array,callback){
-  let output =[];
-  array.forEach( value => {
-    if (callback(value)){
-      output.push(value)
+const FILTER = function(arr,cb){
+  let result =[];
+  arr.forEach( val => {
+    if (cb(val)){
+      result.push(val)
     }
   });
-  console.log(output);
+  console.log(result);
 }
+FILTER(test, val%2);
 //cutting out reduce because we have 20 minutes for the warmpup0-01
-const Reduce = function(arr, acc){
-  let output
+const Reduce = function(arr, cb, init){
+  let acc = (init===undefined) ? undefined : init;
+  for (let i = 0; i< arr.length; i++){
+    acc = callback.call(arr[i],acc);
+  }
 }
 
 //constants given for written functions
@@ -54,8 +59,8 @@ let state = {
   stuff: stuff
 };
 //
-let newPeople = ['Odie', ...people, 'Garfield' ];
-let newStuff = {...stuff,
+let newPeople = ['Odie', ...people , 'Garfield' ];
+let newStuff = {...stuff ,
   cars:[...stuff.cars,'1998 Honda Civic LX']
 };
 let newState = {...state,
@@ -67,4 +72,4 @@ let newState = {...state,
 console.log('people', people, 'newPeople', newPeople);
 console.log('stuff', stuff, 'newStuff', newStuff);
 console.log('state', state , 'newState', newState);
-//
+

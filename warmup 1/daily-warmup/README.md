@@ -1,8 +1,8 @@
 # Warmup-daily
 
-[PR Request]()
-[TravisTests]()
-[JSDocs]: not quite done yet
+[Branch]()
+[TravisTests]() not created yet
+[JSDocs]  not quite done yet
 
 Daily Warmup
 March 25, 2019
@@ -15,7 +15,7 @@ Objects
 [x] Implement .map() as regular javascript functions that take in an array as a parameter, but do the same things as the real functions.
 Objects
 [x] Implement .filter() as regular javascript functions that take in an array as a parameter, but do the same things as the real functions.
-[] Implement .reduce() as regular javascript functions that take in an array as a parameter, but do the same things as the real functions.
+[X] Implement .reduce() as regular javascript functions that take in an array as a parameter, but do the same things as the real functions.
 
 Objects
 [x] Begin with the starter code below …
@@ -32,4 +32,4 @@ Did not have time to.
 
 ### Tests and reduce code Not written due to lab time constraints
 
-Completed with Gregory Dukes
+Completed by self
