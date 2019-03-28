@@ -5,7 +5,7 @@
 [JSDocs]  not quite done yet
 
 Daily Warmup
-March 25, 2019
+March 27, 2019
 ## Challenge
 [x] Create an array of numbers, 1 through 10
 [x] Write a function, called forLoop that takes an array as a parameter, runs the array through a for(...) loop and does a console.log() of each element.
