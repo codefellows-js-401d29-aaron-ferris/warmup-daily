@@ -34,6 +34,6 @@ map function output: \[1,2,3,4,5,6,7,8,9,10]
 
 
 
-### Teand reduce code 
+### REDUCE and FILTER are not workin with callbacks as anticipated. testing has no time
 
 
