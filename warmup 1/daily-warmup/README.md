@@ -27,9 +27,13 @@ Objects
 [x] Prove that the original people, stuff, and state are unchanged.
 
 ## Tests:
-Did not have time to.
+for loop output: 1 2 3 4 5 6 7 8 9 10
+while loop output
+while loop output: 1 2 3 4 5 6 7 8 9 10
+map function output: \[1,2,3,4,5,6,7,8,9,10]
 
 
-### Tests and reduce code Not written due to lab time constraints
 
-Completed by self
+### Teand reduce code 
+
+
