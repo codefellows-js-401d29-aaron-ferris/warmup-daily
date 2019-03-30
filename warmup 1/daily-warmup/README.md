@@ -1,11 +1,11 @@
 # Warmup-daily
 
-[PR Request]()
-[TravisTests]()
-[JSDocs]: not quite done yet
+[Branch]()
+[TravisTests]() not created yet
+[JSDocs]  not quite done yet
 
 Daily Warmup
-March 25, 2019
+March 27, 2019
 ## Challenge
 [x] Create an array of numbers, 1 through 10
 [x] Write a function, called forLoop that takes an array as a parameter, runs the array through a for(...) loop and does a console.log() of each element.
@@ -15,7 +15,7 @@ Objects
 [x] Implement .map() as regular javascript functions that take in an array as a parameter, but do the same things as the real functions.
 Objects
 [x] Implement .filter() as regular javascript functions that take in an array as a parameter, but do the same things as the real functions.
-[] Implement .reduce() as regular javascript functions that take in an array as a parameter, but do the same things as the real functions.
+[X] Implement .reduce() as regular javascript functions that take in an array as a parameter, but do the same things as the real functions.
 
 Objects
 [x] Begin with the starter code below …
@@ -27,9 +27,13 @@ Objects
 [x] Prove that the original people, stuff, and state are unchanged.
 
 ## Tests:
-Did not have time to.
+for loop output: 1 2 3 4 5 6 7 8 9 10
+while loop output
+while loop output: 1 2 3 4 5 6 7 8 9 10
+map function output: \[1,2,3,4,5,6,7,8,9,10]
 
 
-### Tests and reduce code Not written due to lab time constraints
 
-Completed with Gregory Dukes
+### Teand reduce code 
+
+
