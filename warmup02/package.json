@@ -1,0 +1,23 @@
+{
+  "name": "warmup02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "warmupasync.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint **/*.js",
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
+  },
+  "author": "Aaron Ferris",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "superagent": "^5.0.2"
+  }
+}
