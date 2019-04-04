@@ -19,7 +19,7 @@ function whileLoop(arr){
 function map(arr, cb) {
   let newArr =[ ];
   arr.forEach((val, idx)=> {
-    output.push(cb(val, idx))
+    newArr.push(cb(val, idx))
   })
   return newArr;
 }

@@ -1,0 +1,41 @@
+* {
+  box-sizing:border-box
+}
+
+header, footer, aside, nav,div {
+  width: 100%
+}
+
+body, html{
+  width: 100%;
+  height: 100%
+}
+
+header{
+  background-color: orange
+}
+#content{
+  background-color: red
+}
+nav{
+  background-color: blue
+}
+aside{
+  background-color: green
+}
+footer{
+  background-color: pink
+}
+
+header, footer{ height: 75px}
+
+main{
+  height: calc(100% - 150px)
+}
+
+aside, nav{
+  height: 10%;
+}
+#content{
+  height:80%;
+}
