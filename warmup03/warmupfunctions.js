@@ -4,9 +4,10 @@ let stooges = [ 'Larry', 'Curly', 'Moe', 'John']
 
 // for loop 
 const FORLOOP = function (arr) {
-  for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i])
+  for (let i = 0; i < arr.length; i++){
+    console.log(test);
   }
+  
 };
 
 FORLOOP(test);
@@ -14,10 +15,10 @@ FORLOOP(test);
 
 // whileloop 
 const WHILELOOP = function (arr) {
-  let i = 0;
-  while (i < arr.length) {
-    console.log(arr[i])
-    i++;
+  counter = 0;
+  while (counter < arr.length){
+    console.log(test),
+    counter++
   }
 }
 
@@ -25,44 +26,53 @@ WHILELOOP(test);
 
 
 // map function
-const MAP = function (arr) {
-  let output = []
-  for (let i = 0; i < arr.length; i++) {
-    output[i] = arr[i];
-  };
-  console.log(output);
+const MAP = function (arr, cb) {
+  let newArr = [];
+  arr.forEach((val, idx) =>{
+    newArr.push(cb(val, idx));
+  });
+  return newArr;
 }
-MAP(test);
 
-
-//filter function
-const FILTER = function(arr, cb){
-  let result = [];
-  arr.forEach( (val) => {
-    if (cb(val)){
-      result.push(val);
-    }
-  })
-  console.log(result);
+function FILTER(arr, cb) {
+  let newArr = [];
+  arr.forEach((val, idx) =>{
+    if (cb(val, idx)) {
+      newArr.push(val);
+    };
+  });
+  return newArr;
 }
-let funct = (val => (val<5));
 
-FILTER(test, funct)
-
-const REDUCE = function (arr, cb, init){
-  let acc = (init === undefined) ? arr[0]: init;
-  for(let i = 0; i < arr.length; i++){
-    acc = cb(acc, arr[i])
+function REDUCE(arr, cb, acc) {
+  for (let i=0; i < arr.length; i++){
+    acc = cb(acc, arr[i], i);
   }
-  console.log(acc)
+  return acc;
 }
 
-let fun =(valOne, valTwo)  => {
-  return valOne+valTwo;
-};
+FORLOOP(stooges);
+whileLoop(stooges);
+ 
 
-REDUCE(test, fun, 0);
+//shouting names
+let peopleMod = MAP(stooges, (val,idx) =>{
+  val.toUpperCase();
+});
+console.log(stoogesMod);
 
+let stoogesFilter = FILTER(stooges, (val,idx) => {
+  return val.match(/a/)
+});
+console.log(stoogesFilter);
+
+
+let reducedstooges = REDUCE(stooges, (acc,val,idx) => {
+   acc += val
+   return acc
+})
+
+console.log(reducedstooges)
 //constants given for written functions
 const people = ['Kookla', 'Fran', 'Ollie'];
 
