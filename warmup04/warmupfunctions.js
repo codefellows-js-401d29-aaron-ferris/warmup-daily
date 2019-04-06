@@ -44,35 +44,35 @@ function FILTER( arr, cb ) {
   return newArr;
 }
 
-function REDUCE(arr, cb, acc) {
+function REDUCE( arr, cb, acc ) {
   for (let i=0; i < arr.length; i++){
-    acc = cb(acc, arr[i], i);
+    acc = cb( acc, arr[i], i );
   }
   return acc;
 }
 
-FORLOOP(stooges);
-whileLoop(stooges);
+FORLOOP( stooges );
+whileLoop( stooges );
  
 
 //shouting names
-let peopleMod = MAP(stooges, (val,idx) =>{
+let peopleMod = MAP(stooges, ( val, idx ) =>{
   val.toUpperCase();
 });
-console.log(stoogesMod);
+console.log( stoogesMod );
 
-let stoogesFilter = FILTER(stooges, (val,idx) => {
+let stoogesFilter = FILTER( stooges, ( val,idx ) => {
   return val.match(/a/)
 });
-console.log(stoogesFilter);
+console.log( stoogesFilter );
 
 
-let reducedstooges = REDUCE(stooges, (acc,val,idx) => {
+let reducedstooges = REDUCE( stooges, ( acc,val, idx ) => {
    acc += val
    return acc
 })
 
-console.log(reducedstooges)
+console.log( reducedstooges )
 //constants given for written functions
 const people = ['Kookla', 'Fran', 'Ollie'];
 
@@ -101,7 +101,7 @@ let newStuff = {
   ...stuff,
   cars: [...stuff.cars, 'Toyota Supra']
 }
-console.log(newStuff)
+console.log( newStuff )
 
 //add to people in state  and cars in state with spread
 
@@ -115,7 +115,7 @@ let newState = {
   
 }
 
-console.log(newState);
+console.log( newState );
 
 
 
