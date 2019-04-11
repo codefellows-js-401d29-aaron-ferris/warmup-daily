@@ -1,26 +1,25 @@
 @media (min-width: 600px){
   main{
-    flex: grid;
-    grid-template-columns: 100px, auto, 100px;
-    grid-template-rows: 100%;
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "a   b   c"
   }
 
   nav, aside, #content{
-    grid-row-start: 1;
-    grid-row-end: 2;
+    width: auto;
+    height: auto;
   }
 
   nav{
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-area: a;
   }
   aside{
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-area: b;
   }
   #content{
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-area: c;
   }
 }
 
