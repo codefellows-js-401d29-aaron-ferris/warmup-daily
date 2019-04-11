@@ -1,0 +1,11 @@
+@media (min-width: 600px){
+  main{
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav, aside{
+    width: 100px;
+  }
+
+}

@@ -1,0 +1,21 @@
+@media (min-width: 600px){
+  main{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  nav, aside{
+    width: 100px;
+    height: 100%
+  }
+
+  aside{
+    order: -2;
+  }
+  #content{
+  flex-grow: 1;
+  order: -1;
+  height: 100%;
+    
+  }
+}
