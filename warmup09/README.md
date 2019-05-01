@@ -5,7 +5,7 @@ Time to complete: 40 min
 ### Loops
 [x] For loop  
 [x] While loop  
-[x] map
+[x] map  
 [x] Filter  
 [x] Reduce  
 ### Spread
@@ -20,4 +20,4 @@ Time to complete: 40 min
 [x] Handles 404’s by serving the usera a custom page (.ejs)  
 [x] Handles Errors by serving the user a custom page (.ejs)  
 [x] log the actual error to the console  
-[ ] Deploy to Heroku, via your master branch  
+[ ] Deploy to Heroku, via your master branch   
