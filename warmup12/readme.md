@@ -1,7 +1,7 @@
 ## Warmup to turn in 5/3/2019
 STRICT timebox to 30 min
 [Pull request](https://github.com/codefellows-js-401d29-aaron-ferris/warmup-daily/pull/10)  
-
+Time to complete: 40 min  
 ### Loops
 [x] For loop  
 [x] While loop  
@@ -18,7 +18,7 @@ STRICT timebox to 30 min
     [x] practice-linked-list.js   
 [x] Traverse a Binary Tree, printing out the values as you visit each node.  
     [x] practice-trees.js   
-    [ ] Breath First    
+    [x] Breath First    
     [x] Depth First: Pre-Order  
     [x] Depth First: In-Order  
     [x] Depth First: Post-Order  
