@@ -1,7 +1,7 @@
-## Warmup to turn in 5/3/2019
+## Warmup to turn in 5/10/2019
 STRICT timebox to 30 min
-[Pull request](https://github.com/codefellows-js-401d29-aaron-ferris/warmup-daily/pull/10)  
-Time to complete: 40 min  
+[Pull request](https://github.com/codefellows-js-401d29-aaron-ferris/warmup-daily/pull/13)  
+Time to complete: 35 min  
 ### Loops
 [x] For loop  
 [x] While loop  
