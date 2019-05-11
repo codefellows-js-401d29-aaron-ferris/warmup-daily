@@ -1,4 +1,6 @@
 'use strict';
+const queue = require('./practice-queue')
+
 class TreeNode {
   constructor(value){
     this.val = value;
@@ -28,28 +30,33 @@ function preOrder(root){
   return results;
 }
 
-function inOrder(root){
+function inOrder(rootNode){
   let results = []
 
-  const inO = node => {
+  const walk = node => {
     if (node.left) {return inO(node.left)}
     results.push(node.val);
     if (node.right) {return inO(node.right)}
   }
-  inO(root);
+  walk(rootNode);
 
   return results;
 }
 
-function postOrder(root){
+function postOrder(rootNode){
   let results = []
 
-  let post = node => {
+  let walk = node => {
     if (node.left) {return post(node.left)}
     if (node.right) {return post(node.right)}
     results.push(node.val);
   }
-  post(root);
+  walk(rootNode);
 
   return results;
 }
+
+
+console.log('preorder', preOrder(root))
+console.log('inorder', inOrder(root))
+console.log('postorder', postOrder(root))
